@@ -44,8 +44,8 @@ html {
 .categorylist a {
   text-decoration: none;
   padding: 2em;
-  color: white;
-  background-color: var(--cat-background-color);
+  color: rgb(255, 255, 255);
+  background-color:rgb(177, 7, 7);
 }
 
 @media screen and (min-width: 800px) {
@@ -120,7 +120,7 @@ html {
 }
 
 .purchaseBox {
-  background: #d8d8d8;
+  background: #dcd1d1;
   color: var(--background-color);
   padding: 1rem;
 }
