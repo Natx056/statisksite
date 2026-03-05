@@ -57,8 +57,9 @@ html {
 /*ProductList*/
 .productlist main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 270px));
   gap: 2rem;
+ 
 }
 .productlist main h2 {
   grid-column: 1/-1;
@@ -120,7 +121,7 @@ html {
 }
 
 .purchaseBox {
-  background: #dcd1d1;
+  background: #8e6c6c;
   color: var(--background-color);
   padding: 1rem;
 }
@@ -150,7 +151,7 @@ dt {
 }
 @media screen and (min-width: 900px) {
   .product main {
-    grid-template-columns: 1fr 310px;
+    grid-template-columns: 1fr 610px;
   }
   .info {
     order: 0;

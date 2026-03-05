@@ -12,18 +12,18 @@ function showProducts(productsArr) {
   productsArr.forEach((product) => {
     console.log("product", product.id);
 
-    productContainer.innerHTML += `<article class="smallProduct">
+    productContainer.innerHTML += `<article class="smallProduct${product.soldout ? " soldOut" : ""} ${product.discount ? " discounted" : ""}">
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="product image" />
         <p class="soldoutTxt color_me_black_and_red">SOLD OUT</p>
 
-        <h3>Blue T20 Indian Cricket Jersey</h3>
+        <h3>${product.productdisplayname}</h3>
         <p class="subtle">${product.articletype} | ${product.brandname}</p>
-        <p class="price">DKK <span>1595</span>,-</p>
+        <p class="price">DKK <span>${product.price}</span>,-</p>
         <div class="discounted_element">
-          <p>Now DKK <span></span>,-</p>
-          <p class="color_me_red"><span></span>%</p>
+          <p>Now DKK <span>${Math.ceil((product.price / 100) * product.discount)}</span>,-</p>
+          <p class="color_me_red"><span>${product.discount}</span>%</p>
         </div>
-        <a href="product.html">Read More</a>
+        <a href="product.html?id=${product.id}"}>Read More</a>
       </article>`;
   });
 }
