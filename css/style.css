@@ -45,7 +45,7 @@ html {
   text-decoration: none;
   padding: 2em;
   color: rgb(255, 255, 255);
-  background-color:rgb(177, 7, 7);
+  background-color: rgb(177, 7, 7);
 }
 
 @media screen and (min-width: 800px) {
@@ -59,7 +59,6 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 270px));
   gap: 2rem;
- 
 }
 .productlist main h2 {
   grid-column: 1/-1;
